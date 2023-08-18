@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+%flex {
+    @apply flex;
+}
+
+%flex-col {
+    @extend %flex;
+    @apply flex-col;
+}
+
+.flex-col-item {
+    @extend %flex-col;
+}
+
+.flex-col-x-center {
+
+    @extend %flex-col;
+    @apply items-center;
+}
+
+%flex-center {
+    @extend %flex;
+    @apply items-center justify-center;
+}
+
+%flex-between {
+    @extend %flex;
+    @apply justify-between;
+}
+
+%flex-y-center {
+    @extend %flex;
+    @apply items-center;
+
+}
+
+%flex-col-center {
+    @extend %flex-col;
+    @extend %flex-center;
+}
+
+%flex-between-center {
+    @extend %flex-between;
+    @apply items-center;
+}
+
+.flex-between {
+    @extend %flex-between;
+}
+
+.flex-between-center {
+    @extend %flex-between-center;
+}
+
+.flex-center {
+    @extend %flex-center;
+}
+
+.flex-col-center {
+    @extend %flex-col-center;
+}
+
+.flex-y-center {
+    @extend %flex-y-center;
+}
+
+aside {
+    a.active {
+        span:first-child {
+            @apply bg-[#f6f6bc] text-white;
+        }
+    }
+}
